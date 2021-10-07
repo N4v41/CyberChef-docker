@@ -1,9 +1,8 @@
 FROM nginx:1.20.1-alpine
 
-RUN uname -a
-RUN apk update 
-RUN apk add --no-cache wget unzip
 ENV CYBERCHEF_VERSION v9.32.3
+RUN uname -a
+RUN apk update && apk add --no-cache wget unzip
 
 WORKDIR /usr/share/nginx/html
 RUN wget https://gchq.github.io/CyberChef/CyberChef_${CYBERCHEF_VERSION}.zip
