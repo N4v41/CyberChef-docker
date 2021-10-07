@@ -7,7 +7,6 @@ WORKDIR /usr/share/nginx/html
 RUN wget https://gchq.github.io/CyberChef/CyberChef_${CYBERCHEF_VERSION}.zip
 RUN unzip CyberChef_${CYBERCHEF_VERSION}.zip
 RUN mv CyberChef_${CYBERCHEF_VERSION}.html index.html
-#remove unused packages and files
 RUN rm CyberChef_${CYBERCHEF_VERSION}.zip && apk del wget unzip
 
 EXPOSE 80
