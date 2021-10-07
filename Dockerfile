@@ -1,7 +1,6 @@
 FROM nginx:1.20.1-alpine
 
 ENV CYBERCHEF_VERSION v9.32.3
-RUN uname -a
 RUN apk update && apk add --no-cache wget unzip
 
 WORKDIR /usr/share/nginx/html
