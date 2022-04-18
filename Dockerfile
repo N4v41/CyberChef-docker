@@ -1,4 +1,4 @@
-FROM nginx:1.20.1-alpine
+FROM nginx:alpine
 
 ENV CYBERCHEF_VERSION v9.37.3
 RUN apk update && apk add --no-cache wget unzip
