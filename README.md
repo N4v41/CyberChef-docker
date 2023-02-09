@@ -11,3 +11,5 @@ just run like:
 ```bash
 docker run -p 8080:80 n4v41/cyberchef
 ```
+
+and then enjoy!
