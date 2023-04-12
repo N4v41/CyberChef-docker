@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ENV CYBERCHEF_VERSION v9.55.0
+ENV CYBERCHEF_VERSION v10.4.0
 RUN apk update && apk add --no-cache wget unzip
 
 WORKDIR /usr/share/nginx/html
